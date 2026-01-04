@@ -8,8 +8,8 @@ const montserrat = Montserrat({
 	weight: ["400", "500", "600", "700"],
 });
 export const metadata: Metadata = {
-	title: "Arduino Day Philippines 2025",
-	description: "The Official Website of Arduino Day Philippines 2025.",
+	title: "Arduino Day Philippines 2026",
+	description: "The Official Website of Arduino Day Philippines 2026.",
 };
 
 export default function RootLayout({
