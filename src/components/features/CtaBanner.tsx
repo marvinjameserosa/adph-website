@@ -11,11 +11,11 @@ const CtaBanner = () => {
 				<div className="flex gap-4 items-center justify-center max-w-[80%]">
 					<IconMapPin className="w-8 h-10 text-secondary" />
 					<h4 className="uppercase text-[clamp(18px,2.5vw,51.99px)] text-center">
-						TO BE ANNOUNCED
+						Asia Pacific College
 					</h4>
 				</div>
 				<Heading
-					text="Date Coming Soon"
+					text="March 21, 2026"
 					className="text-[clamp(72px,18vw,320px)] tracking-normal uppercase"
 					glowAll
 				/>
