@@ -1,27 +1,10 @@
 'use client';
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import { sponsors } from '@/data/index'
 import GlowingTextOrange from '@/components/ui/glow-text-orange'
 
 const Partners = () => {
-  const [windowWidth, setWindowWidth] = useState(0)
-
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth)
-    window.addEventListener('resize', handleResize)
-    handleResize()
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-
-  const getAdjustedSize = (size: number) => {
-    // Adjust these offsets as desired for your breakpoints
-    if (windowWidth <= 640) return size - 10   // Mobile
-    if (windowWidth <= 768) return size - 20   // Tablet
-    if (windowWidth <= 1024) return size - 40  // Desktop
-    return size 
-  }
-
   return (
     <div className="py-8 sm:py-12 md:py-16">
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 md:px-8">
@@ -53,26 +36,20 @@ const Partners = () => {
                 <div className="w-full h-full bg-[#0f0f0f] rounded-2xl" />
               </div>
 
-    
-              <Image
-                src={sponsor.path_to_image}
-                alt={sponsor.name}
-                width={getAdjustedSize(sponsor.width)}
-                height={getAdjustedSize(sponsor.height)}
-                style={{ width: 'auto', height: 'auto' }}
-                className={`z-10 object-contain ${
-                  sponsor.radius ? 'rounded-full' : ''
-                } group-hover:hidden transition-opacity duration-300`}
-              />
+              <div className="relative z-10 h-16 w-full sm:h-20 md:h-24 group-hover:hidden transition-opacity duration-300">
+                <Image
+                  src={sponsor.path_to_image}
+                  alt={sponsor.name}
+                  fill
+                  sizes="(max-width: 640px) 40vw, (max-width: 1024px) 28vw, 16vw"
+                  className={`object-contain ${
+                    sponsor.radius ? 'rounded-full' : ''
+                  }`}
+                />
+              </div>
 
-      
               <div
-                className={`
-                  z-10 hidden group-hover:flex 
-                  text-white text-xl font-semibold text-center 
-                  items-center justify-center
-                  font-morganite h-[${getAdjustedSize(sponsor.height)}px]
-                `}
+                className="z-10 hidden group-hover:flex h-16 sm:h-20 md:h-24 text-white text-xl font-semibold text-center items-center justify-center font-morganite"
               >
                 {sponsor.name}
               </div>
