@@ -59,6 +59,7 @@ const Partners = () => {
                 alt={sponsor.name}
                 width={getAdjustedSize(sponsor.width)}
                 height={getAdjustedSize(sponsor.height)}
+                style={{ width: 'auto', height: 'auto' }}
                 className={`z-10 object-contain ${
                   sponsor.radius ? 'rounded-full' : ''
                 } group-hover:hidden transition-opacity duration-300`}
