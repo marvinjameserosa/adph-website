@@ -120,7 +120,7 @@ const AboutUs = () => {
 					<span className="h-2 w-2 rounded-full bg-primary shadow-[0_0_0_6px_rgba(0,178,178,0.18)] animate-pulse" />
 					<span>About the day</span>
 				</div>
-				<h2>
+				<h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-10 md:mb-12 font-morganite">
 					What is <span className="text-primary">Arduino</span>{" "}
 					<span className="text-secondary">Day</span>{" "}
 					<span className="text-[#21935B]">Philippines?</span>
@@ -139,7 +139,7 @@ const AboutUs = () => {
 			<div className="mt-4 w-full max-w-4xl">
 				<div className="grid grid-cols-1 gap-3 sm:grid-cols-5 sm:grid-rows-[200px_200px] sm:gap-4">
 					{/* Large feature image - spans 3 cols and 2 rows */}
-					<div className="group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-auto sm:col-span-3 sm:row-span-2">
+					<div className="group relative overflow-hidden rounded-2xl border border-white aspect-[4/3] sm:aspect-auto sm:col-span-3 sm:row-span-2">
 						<Image
 							src="/images/about-1.jpg"
 							alt="Community members collaborating with Arduino boards at a maker event"
@@ -148,14 +148,14 @@ const AboutUs = () => {
 							sizes="(max-width: 640px) 100vw, 60vw"
 						/>
 						<div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#008080]/40 via-transparent to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-30" />
-						<div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10 transition-all duration-500 group-hover:ring-primary/30" />
+						<div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/20 transition-all duration-500 group-hover:ring-primary/30" />
 						<div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
 							<span className="font-morganite text-2xl uppercase tracking-wider text-white/80 drop-shadow-lg sm:text-3xl">Community</span>
 						</div>
 					</div>
 
 					{/* Top-right image */}
-					<div className="group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-auto sm:col-span-2">
+					<div className="group relative overflow-hidden rounded-2xl border border-white aspect-[4/3] sm:aspect-auto sm:col-span-2">
 						<Image
 							src="/images/about-2.jpg"
 							alt="Close-up of Arduino boards, wires, and components on a workshop table"
@@ -164,14 +164,14 @@ const AboutUs = () => {
 							sizes="(max-width: 640px) 100vw, 40vw"
 						/>
 						<div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-[#EE7402]/30 opacity-70 transition-opacity duration-500 group-hover:opacity-20" />
-						<div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10 transition-all duration-500 group-hover:ring-secondary/30" />
+						<div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/20 transition-all duration-500 group-hover:ring-secondary/30" />
 						<div className="absolute bottom-0 left-0 right-0 p-4">
 							<span className="font-morganite text-2xl uppercase tracking-wider text-white/80 drop-shadow-lg">Build</span>
 						</div>
 					</div>
 
 					{/* Bottom-right image */}
-					<div className="group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-auto sm:col-span-2">
+					<div className="group relative overflow-hidden rounded-2xl border border-white aspect-[4/3] sm:aspect-auto sm:col-span-2">
 						<Image
 							src="/images/about-3.jpg"
 							alt="Speaker presenting at a tech community event with an engaged audience"
@@ -180,7 +180,7 @@ const AboutUs = () => {
 							sizes="(max-width: 640px) 100vw, 40vw"
 						/>
 						<div className="pointer-events-none absolute inset-0 bg-gradient-to-tl from-[#008080]/25 via-transparent to-[#EE7402]/15 opacity-60 transition-opacity duration-500 group-hover:opacity-20" />
-						<div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10 transition-all duration-500 group-hover:ring-white/20" />
+						<div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/20 transition-all duration-500 group-hover:ring-white/30" />
 						<div className="absolute bottom-0 left-0 right-0 p-4">
 							<span className="font-morganite text-2xl uppercase tracking-wider text-white/80 drop-shadow-lg">Learn</span>
 						</div>
