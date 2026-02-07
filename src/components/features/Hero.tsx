@@ -2,7 +2,6 @@
 
 import { useEffect, useState, useCallback } from "react";
 import Link from "next/link";
-import { Button } from "../ui/button";
 import Image from "next/image";
 import Logo from "../../../public/assets/adph-logo.png";
 import { IconMapPin, IconCalendarEvent } from "@tabler/icons-react";
@@ -37,7 +36,7 @@ export const Hero = () => {
 	return (
 		<section className="relative overflow-hidden">
 			<div className="container relative pt-8 pb-16 sm:pt-12 sm:pb-20 md:pt-16 md:pb-28">
-				<div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+				<div className="grid items-center gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-8">
 					{/* Content - left side on desktop */}
 					<div className="flex flex-col items-center text-center lg:items-start lg:text-left">
 						{/* Date & venue */}
@@ -57,10 +56,10 @@ export const Hero = () => {
 						</div>
 
 						{/* Headline */}
-						<h1 className="mb-5 max-w-2xl text-balance text-3xl font-bold leading-[1.1] sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl">
+						<h1 className="mb-5 max-w-2xl text-balance text-4xl font-bold leading-[1.1] sm:mb-6 sm:text-5xl md:text-6xl lg:text-7xl">
 							<span className="text-primary">Arduino</span>{" "}
 							<span className="text-secondary">Day</span>{" "}
-							<span className="text-primary">Philippines</span>{" "}
+							<span className="text-[#21935B]">Philippines</span>{" "}
 							2026
 						</h1>
 
@@ -72,10 +71,11 @@ export const Hero = () => {
 
 						{/* CTA buttons */}
 						<div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 lg:justify-start">
-							<Link href="#partners">
-								<Button className="px-6 py-3 text-sm sm:px-8 sm:py-3.5 lg:px-10 lg:py-4">
-									Partner With Us
-								</Button>
+							<Link
+								href="#partners"
+								className="inline-flex items-center rounded-full bg-primary/90 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-all hover:bg-primary sm:px-8 sm:py-3.5 lg:px-10 lg:py-4"
+							>
+								Partner With Us
 							</Link>
 							<Link
 								href="#merch"
@@ -87,7 +87,7 @@ export const Hero = () => {
 					</div>
 
 					{/* Logo with parallax - right side on desktop */}
-					<div className="flex items-center justify-center">
+					<div className="flex items-center justify-center lg:-ml-8">
 						<div
 							className="relative"
 							style={{
