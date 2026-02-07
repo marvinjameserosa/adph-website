@@ -40,14 +40,14 @@ export const Hero = () => {
 					{/* Content - left on desktop, stacks first on mobile */}
 					<div className="order-2 flex flex-col items-center text-center lg:order-1 lg:items-start lg:text-left">
 						{/* Date & venue */}
-						<div className="mb-4 flex flex-col items-center gap-2 sm:mb-6 sm:flex-row sm:gap-4 md:mb-8 md:gap-5 lg:items-start">
-							<div className="flex items-center gap-1.5 sm:gap-2">
+						<div className="mb-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 sm:mb-6 md:mb-8 lg:justify-start">
+							<div className="flex shrink-0 items-center gap-1.5 whitespace-nowrap sm:gap-2">
 								<IconCalendarEvent className="h-3.5 w-3.5 text-secondary/80 sm:h-4 sm:w-4" />
 								<span className="text-xs font-semibold tracking-wide text-white sm:text-sm md:text-base">
 									March 21, 2026
 								</span>
 							</div>
-							<div className="flex items-center gap-1.5 sm:gap-2">
+							<div className="flex shrink-0 items-center gap-1.5 whitespace-nowrap sm:gap-2">
 								<IconMapPin className="h-3.5 w-3.5 text-secondary/80 sm:h-4 sm:w-4" />
 								<span className="text-xs font-medium text-white/60 sm:text-sm md:text-base">
 									Asia Pacific College, Makati
@@ -56,11 +56,9 @@ export const Hero = () => {
 						</div>
 
 						{/* Headline */}
-						<h1 className="mb-4 max-w-2xl text-balance text-3xl font-bold leading-[1.1] sm:mb-5 sm:text-4xl md:mb-6 md:text-5xl lg:text-6xl xl:text-7xl">
-							<span className="text-primary">Arduino</span>{" "}
-							<span className="text-secondary">Day</span>{" "}
-							<span className="text-[#21935B]">Philippines</span>{" "}
-							2026
+						<h1 className="mb-4 max-w-2xl text-3xl font-bold leading-[1.1] sm:mb-5 sm:text-4xl md:mb-6 md:text-5xl lg:text-6xl xl:text-7xl">
+							<span className="whitespace-nowrap"><span className="text-primary">Arduino</span>{" "}<span className="text-secondary">Day</span></span>{" "}
+							<span className="whitespace-nowrap"><span className="text-[#21935B]">Philippines</span>{" "}2026</span>
 						</h1>
 
 						{/* Subtitle */}
