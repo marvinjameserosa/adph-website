@@ -62,11 +62,16 @@ export const Hero = () => {
 					/>
 				</div>
 
-				{/* Date badge */}
-				<div className="mb-5 inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur sm:mb-6 sm:gap-3">
+				{/* Date & venue badge */}
+				<div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur sm:mb-6 sm:gap-2.5">
 					<IconCalendarEvent className="h-4 w-4 text-primary" />
 					<span className="text-[11px] font-medium uppercase tracking-[0.2em] text-white/80 sm:text-xs">
 						March 21, 2026
+					</span>
+					<span className="text-white/25" aria-hidden>|</span>
+					<IconMapPin className="h-4 w-4 text-primary" />
+					<span className="text-[11px] font-medium uppercase tracking-[0.2em] text-white/80 sm:text-xs">
+						Asia Pacific College
 					</span>
 				</div>
 
@@ -87,9 +92,14 @@ export const Hero = () => {
 
 				{/* CTA buttons */}
 				<div className="mb-12 flex flex-wrap items-center justify-center gap-3 sm:mb-16 sm:gap-4">
-					<Link href="https://arduinodayph.pwapilipinas.org/">
+					<Link href="#partners">
 						<Button className="px-6 py-3 text-sm sm:px-8 sm:py-3.5 lg:px-10 lg:py-4">
-							Get Updates
+							Partner With Us
+						</Button>
+					</Link>
+					<Link href="#merch">
+						<Button className="border-secondary bg-secondary/10 px-6 py-3 text-sm text-secondary hover:bg-secondary/20 sm:px-8 sm:py-3.5 lg:px-10 lg:py-4">
+							Shop Merch for a Cause
 						</Button>
 					</Link>
 					<Link
