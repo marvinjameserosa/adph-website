@@ -25,34 +25,10 @@ const Footer = () => {
 					</p>
 					<div className="flex gap-4 mt-4 mb-4">
 						<a
-							href="https://www.tiktok.com"
+							href="https://www.facebook.com/arduinodayph"
 							target="_blank"
 							rel="noopener noreferrer"
-						>
-							<svg
-								width="37"
-								height="37"
-								viewBox="0 0 37 37"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<circle
-									cx="18.3707"
-									cy="18.3609"
-									r="18.3707"
-									fill="#D9D9D9"
-									className="hover:fill-primary duration-300"
-								/>
-								<path
-									d="M21.5237 11.5892L21.1587 11.0137H18.9499V16.197L18.9424 21.26C18.9461 21.2976 18.9499 21.339 18.9499 21.3766C18.9499 22.6443 17.9188 23.6787 16.647 23.6787C15.3751 23.6787 14.344 22.648 14.344 21.3766C14.344 20.109 15.3751 19.0746 16.647 19.0746C16.9104 19.0746 17.1662 19.1235 17.4033 19.2062V16.6785C17.1587 16.6371 16.9066 16.6146 16.647 16.6146C14.0242 16.6183 11.8868 18.7549 11.8868 21.3804C11.8868 24.0059 14.0242 26.1425 16.6507 26.1425C19.2773 26.1425 21.4146 24.0059 21.4146 21.3804V15.3582C22.3666 16.3099 23.5971 17.239 24.9593 17.5361V14.952C23.4805 14.2975 22.0092 12.3641 21.5237 11.5892Z"
-									fill="#131118"
-								/>
-							</svg>
-						</a>
-						<a
-							href="https://www.facebook.com"
-							target="_blank"
-							rel="noopener noreferrer"
+							aria-label="Facebook"
 						>
 							<svg
 								width="37"
@@ -75,9 +51,10 @@ const Footer = () => {
 							</svg>
 						</a>
 						<a
-							href="https://www.linkedin.com"
+							href="https://www.instagram.com/arduinodayph"
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label="Instagram"
 						>
 							<svg
 								width="37"
@@ -94,15 +71,38 @@ const Footer = () => {
 									className="hover:fill-primary duration-300"
 								/>
 								<path
-									d="M14.2224 15.9883H11.0611V26.0693H14.2224V15.9883Z"
+									d="M22.5 11H14.5C12.567 11 11 12.567 11 14.5V22.5C11 24.433 12.567 26 14.5 26H22.5C24.433 26 26 24.433 26 22.5V14.5C26 12.567 24.433 11 22.5 11ZM24.25 22.5C24.25 23.467 23.467 24.25 22.5 24.25H14.5C13.533 24.25 12.75 23.467 12.75 22.5V14.5C12.75 13.533 13.533 12.75 14.5 12.75H22.5C23.467 12.75 24.25 13.533 24.25 14.5V22.5Z"
 									fill="#131118"
 								/>
 								<path
-									d="M22.7739 15.77C22.6574 15.7555 22.5335 15.7482 22.4097 15.7409C20.6397 15.6681 19.6418 16.717 19.2922 17.1686C19.1975 17.2924 19.1538 17.3652 19.1538 17.3652V16.0177H16.1309V26.0987H19.1538H19.2922C19.2922 25.0717 19.2922 24.0519 19.2922 23.0249C19.2922 22.4713 19.2922 21.9177 19.2922 21.3641C19.2922 20.6795 19.2412 19.9511 19.5835 19.3246C19.8749 18.8002 20.3993 18.538 20.9893 18.538C22.7375 18.538 22.7739 20.1186 22.7739 20.2643C22.7739 20.2715 22.7739 20.2788 22.7739 20.2788V26.1424H25.9352V19.565C25.9352 17.3143 24.7916 15.9886 22.7739 15.77Z"
+									d="M18.5 14.75C16.429 14.75 14.75 16.429 14.75 18.5C14.75 20.571 16.429 22.25 18.5 22.25C20.571 22.25 22.25 20.571 22.25 18.5C22.25 16.429 20.571 14.75 18.5 14.75ZM18.5 20.5C17.395 20.5 16.5 19.605 16.5 18.5C16.5 17.395 17.395 16.5 18.5 16.5C19.605 16.5 20.5 17.395 20.5 18.5C20.5 19.605 19.605 20.5 18.5 20.5Z"
 									fill="#131118"
 								/>
+								<circle cx="22.5" cy="14.5" r="0.75" fill="#131118" />
+							</svg>
+						</a>
+						<a
+							href="https://www.tiktok.com/@arduinodayph"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="TikTok"
+						>
+							<svg
+								width="37"
+								height="37"
+								viewBox="0 0 37 37"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<circle
+									cx="18.3707"
+									cy="18.3609"
+									r="18.3707"
+									fill="#D9D9D9"
+									className="hover:fill-primary duration-300"
+								/>
 								<path
-									d="M12.6418 14.6838C13.6556 14.6838 14.4774 13.862 14.4774 12.8483C14.4774 11.8345 13.6556 11.0127 12.6418 11.0127C11.6281 11.0127 10.8063 11.8345 10.8063 12.8483C10.8063 13.862 11.6281 14.6838 12.6418 14.6838Z"
+									d="M21.5237 11.5892L21.1587 11.0137H18.9499V16.197L18.9424 21.26C18.9461 21.2976 18.9499 21.339 18.9499 21.3766C18.9499 22.6443 17.9188 23.6787 16.647 23.6787C15.3751 23.6787 14.344 22.648 14.344 21.3766C14.344 20.109 15.3751 19.0746 16.647 19.0746C16.9104 19.0746 17.1662 19.1235 17.4033 19.2062V16.6785C17.1587 16.6371 16.9066 16.6146 16.647 16.6146C14.0242 16.6183 11.8868 18.7549 11.8868 21.3804C11.8868 24.0059 14.0242 26.1425 16.6507 26.1425C19.2773 26.1425 21.4146 24.0059 21.4146 21.3804V15.3582C22.3666 16.3099 23.5971 17.239 24.9593 17.5361V14.952C23.4805 14.2975 22.0092 12.3641 21.5237 11.5892Z"
 									fill="#131118"
 								/>
 							</svg>
@@ -112,51 +112,41 @@ const Footer = () => {
 
 				<div className="grid grid-cols-2 gap-8 sm:gap-10 md:gap-20">
 					<div>
-						<p className="font-semibold mb-2">About Us</p>
+						<p className="font-semibold mb-2">Navigate</p>
 						<ul className="text-gray-400 space-y-1">
 							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Description
+								<a href="#about" className="hover:text-primary duration-300">
+									About
 								</a>
 							</li>
 							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Mission & Vision
+								<a href="#speakers" className="hover:text-primary duration-300">
+									Speakers
 								</a>
 							</li>
 							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Location
+								<a href="#agenda" className="hover:text-primary duration-300">
+									Agenda
 								</a>
 							</li>
 							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Highlights
-								</a>
-							</li>
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Sponsors
+								<a href="#faq" className="hover:text-primary duration-300">
+									FAQs
 								</a>
 							</li>
 						</ul>
 					</div>
 					<div>
-						<p className="font-semibold mb-2">General</p>
+						<p className="font-semibold mb-2">Get Involved</p>
 						<ul className="text-gray-400 space-y-1">
 							<li>
-								<a href="" className="hover:text-primary duration-300">
-									FAQs
+								<a href="mailto:arduinodayph@gmail.com" className="hover:text-primary duration-300">
+									Contact Us
 								</a>
 							</li>
 							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Agenda
-								</a>
-							</li>
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Merch
+								<a href="#partners" className="hover:text-primary duration-300">
+									Partners
 								</a>
 							</li>
 						</ul>
