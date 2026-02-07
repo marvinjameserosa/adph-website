@@ -56,7 +56,7 @@ export const Hero = () => {
 						</div>
 
 						{/* Headline */}
-						<h1 className="mb-4 text-[2rem] font-bold leading-[1.15] sm:mb-5 sm:text-5xl md:mb-6 md:text-6xl lg:text-7xl">
+						<h1 className="mb-4 text-[2.75rem] font-bold leading-[1.1] sm:mb-5 sm:text-[3rem] md:mb-6 md:text-[3.25rem] lg:text-7xl">
 							<span className="text-primary">Arduino</span>{" "}<span className="text-secondary">Day</span>
 							<br />
 							<span className="text-[#21935B]">Philippines</span> 2026
@@ -86,7 +86,7 @@ export const Hero = () => {
 					</div>
 
 					{/* Logo with parallax - right on desktop, top on mobile */}
-					<div className="order-1 flex items-center justify-center lg:order-2 lg:-ml-8">
+					<div className="order-1 hidden items-center justify-center lg:order-2 lg:flex lg:-ml-8">
 						<div
 							className="relative"
 							style={{
