@@ -41,17 +41,17 @@ export const Hero = () => {
 					{/* Content - left side on desktop */}
 					<div className="flex flex-col items-center text-center lg:items-start lg:text-left">
 						{/* Date & venue badge */}
-						<div className="mb-5 inline-flex flex-wrap items-center justify-center gap-2 rounded-full border border-white/8 bg-white/[0.03] px-4 py-2 backdrop-blur-sm sm:mb-6 sm:gap-2.5 sm:px-5">
+						<div className="mb-5 inline-flex flex-wrap items-center justify-center gap-2 rounded-full border border-white/[0.06] bg-white/[0.02] px-4 py-2 backdrop-blur-sm sm:mb-6 sm:gap-2.5 sm:px-5">
 							<div className="flex items-center gap-1.5">
-								<IconCalendarEvent className="h-4 w-4 text-[#5ba3a3]" />
-								<span className="text-[11px] font-medium uppercase tracking-[0.18em] text-white/50 sm:text-xs">
+								<IconCalendarEvent className="h-4 w-4 text-primary/70" />
+								<span className="text-[11px] font-medium uppercase tracking-[0.18em] text-white/40 sm:text-xs">
 									March 21, 2026
 								</span>
 							</div>
-							<span className="text-white/15" aria-hidden>|</span>
+							<span className="text-white/10" aria-hidden>|</span>
 							<div className="flex items-center gap-1.5">
-								<IconMapPin className="h-4 w-4 text-[#5ba3a3]" />
-								<span className="text-[11px] font-medium uppercase tracking-[0.18em] text-white/50 sm:text-xs">
+								<IconMapPin className="h-4 w-4 text-primary/70" />
+								<span className="text-[11px] font-medium uppercase tracking-[0.18em] text-white/40 sm:text-xs">
 									Asia Pacific College
 								</span>
 							</div>
@@ -59,18 +59,18 @@ export const Hero = () => {
 
 						{/* Headline */}
 						<h1 className="mb-5 max-w-2xl text-balance text-3xl font-bold leading-[1.1] sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl">
-							Arduino Day{" "}
+							<span className="text-primary">Arduino</span> Day{" "}
 							<span
 								className="bg-clip-text text-transparent"
-								style={{ backgroundImage: "linear-gradient(135deg, #5ba3a3 0%, #4d8a8a 45%, #c48a4a 100%)" }}
+								style={{ backgroundImage: "linear-gradient(135deg, #008080 0%, #00a0a0 40%, #EE7402 100%)" }}
 							>
 								Philippines
 							</span>{" "}
-							2026
+							<span className="text-[#2ea043]">2026</span>
 						</h1>
 
 						{/* Subtitle */}
-						<p className="mb-8 max-w-lg text-sm leading-relaxed text-white/45 sm:mb-10 sm:text-base md:text-lg">
+						<p className="mb-8 max-w-lg text-sm leading-relaxed text-white/50 sm:mb-10 sm:text-base md:text-lg">
 							A day of talks, demos, and community-led sessions for builders,
 							creators, and tinkerers. Join us and help shape what comes next.
 						</p>
@@ -89,7 +89,7 @@ export const Hero = () => {
 							</Link>
 							<Link
 								href="#faqs"
-								className="inline-flex items-center rounded-full border border-white/8 px-5 py-3 text-xs font-medium uppercase tracking-[0.14em] text-white/45 transition-all hover:border-white/20 hover:text-white/75 sm:px-6 sm:py-3.5 sm:text-sm"
+								className="inline-flex items-center rounded-full border border-white/[0.06] px-5 py-3 text-xs font-medium uppercase tracking-[0.14em] text-white/40 transition-all hover:border-white/15 hover:text-white/65 sm:px-6 sm:py-3.5 sm:text-sm"
 							>
 								View FAQs
 							</Link>
@@ -108,7 +108,7 @@ export const Hero = () => {
 						>
 							<div
 								className="absolute inset-0 m-auto h-52 w-52 rounded-full blur-3xl sm:h-64 sm:w-64 md:h-80 md:w-80"
-								style={{ background: "radial-gradient(circle, rgba(91,163,163,0.12) 0%, rgba(196,138,74,0.04) 70%, transparent 85%)" }}
+								style={{ background: "radial-gradient(circle, rgba(0,128,128,0.08) 0%, rgba(238,116,2,0.03) 70%, transparent 85%)" }}
 								aria-hidden
 							/>
 							<Image

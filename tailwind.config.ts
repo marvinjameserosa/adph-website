@@ -34,11 +34,11 @@ export default {
         morganite: ["Morganite", "sans-serif"],
       },
       backgroundImage: {
-        "gradient-hover": `linear-gradient(130deg, ${globalColors.primary} 0%, #42B7B7 44%, #71DEDF 77%, #7DC5C7 100%)`,
-        "gradient-clicked": "linear-gradient(135deg, #42B7B7 4%, #E2ECED 78%, #7DC5C7 100%)",
-        "gradient-border-default": `linear-gradient(0deg, ${globalColors.primary} 0%, #66F7F7 63%, #FFFFFF 100%)`,
-        "gradient-border-active": `linear-gradient(0deg, #F8F7FC 0%, ${globalColors.accent} 100%)`,
-        "gradient-border-transparent": "linear-gradient(180deg, #D6EAEA 24%, #1A1A1C 100%)",
+        "gradient-hover": `linear-gradient(130deg, ${globalColors.primary} 0%, rgba(66,183,183,0.7) 44%, rgba(113,222,223,0.4) 77%, rgba(125,197,199,0.5) 100%)`,
+        "gradient-clicked": "linear-gradient(135deg, rgba(66,183,183,0.6) 4%, rgba(226,236,237,0.4) 78%, rgba(125,197,199,0.5) 100%)",
+        "gradient-border-default": `linear-gradient(0deg, ${globalColors.primary} 0%, rgba(0,178,178,0.5) 63%, rgba(255,255,255,0.2) 100%)`,
+        "gradient-border-active": `linear-gradient(0deg, rgba(248,247,252,0.4) 0%, ${globalColors.accent} 100%)`,
+        "gradient-border-transparent": "linear-gradient(180deg, rgba(214,234,234,0.5) 24%, #1A1A1C 100%)",
         "gradient-cta": `linear-gradient(90deg, #F8F7FC 0%, #008B9C 35.5%, #EE7402 68.5%, #F8F7FC 100%)`,
       },
       fontSize: {

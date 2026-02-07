@@ -7,7 +7,7 @@ export const Button: React.FC<
 > = ({ children, className, onClick, ...props }) => {
 	return (
 		<button
-			className="relative inline-flex overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 hover:shadow-[0px_0px_15px_#008080] "
+			className="relative inline-flex overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2 focus:ring-offset-[#05060d] hover:shadow-[0px_0px_20px_rgba(0,128,128,0.15)]"
 			{...props}
 			onClick={onClick}
 		>
