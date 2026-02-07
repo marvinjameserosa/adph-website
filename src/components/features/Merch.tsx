@@ -76,7 +76,7 @@ export default function Merch() {
     const [currentShirt, setCurrentShirt] = useState(0);
 
     return (
-        <section className="h-screen w-full px-4 md:px-0 mt-12">
+        <div className="w-full px-4 md:px-0">
             <div className="flex mt-6 flex-col text-center gap-1">
                 <h2>Merch</h2>
                 <p className="text-[15px] md:text-xl mx-[20px] md:mx-0">Gear Up, Innovate, and Represent! Get Your Exclusive Arduino Merch Today!</p>
@@ -102,6 +102,6 @@ export default function Merch() {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
