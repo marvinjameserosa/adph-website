@@ -30,7 +30,7 @@ export default function Home() {
 				<Navbar />
 				<Hero />
 				<Reveal>
-					<section id="about" className="scroll-mt-24 pt-16 md:pt-24">
+					<section id="about" className="scroll-mt-24 pt-10 sm:pt-16 md:pt-24">
 						<AboutUs />
 					</section>
 				</Reveal>
@@ -38,7 +38,7 @@ export default function Home() {
 					<Location />
 				</Reveal>
 				<Reveal>
-					<section id="speakers" className="scroll-mt-24 py-16 md:py-24">
+					<section id="speakers" className="scroll-mt-24 py-10 sm:py-16 md:py-24">
 						<ComingSoon
 							label="Speakers"
 							description="We are locking in a lineup of voices who build, ship, and share openly. Expect a mix of community favorites and fresh perspectives."
@@ -46,7 +46,7 @@ export default function Home() {
 					</section>
 				</Reveal>
 				<Reveal>
-					<section id="hackathon" className="scroll-mt-24 py-16 md:py-24">
+					<section id="hackathon" className="scroll-mt-24 py-10 sm:py-16 md:py-24">
 						<ComingSoon
 							label="Hackathon"
 							description="Tracks, mentors, and judging are in the works so the build sprint feels focused and fair. Challenges and criteria will drop soon."
@@ -54,7 +54,7 @@ export default function Home() {
 					</section>
 				</Reveal>
 				<Reveal>
-					<section id="agenda" className="scroll-mt-24 py-16 md:py-24">
+					<section id="agenda" className="scroll-mt-24 py-10 sm:py-16 md:py-24">
 						<ComingSoon
 							label="Agenda"
 							description="We are dialing in the flow so every session has breathing room and impact. Timing, rooms, and transitions will be shared shortly."
@@ -62,12 +62,12 @@ export default function Home() {
 					</section>
 				</Reveal>
 				<Reveal>
-					<section id="partners" className="scroll-mt-24 py-16 md:py-24">
+					<section id="partners" className="scroll-mt-24 py-10 sm:py-16 md:py-24">
 						<Partners />
 					</section>
 				</Reveal>
 				<Reveal>
-					<section id="merch" className="scroll-mt-24 py-16 md:py-24">
+					<section id="merch" className="scroll-mt-24 py-10 sm:py-16 md:py-24">
 						<ComingSoon
 							label="Merch"
 							description="The drop is in progress - pieces designed for daily wear, not just event day. Photos, pricing, and preorder details are coming."
@@ -80,7 +80,7 @@ export default function Home() {
 					</section>
 				</Reveal>
 				<Reveal>
-					<section aria-label="Stay updated" className="py-16 md:py-24">
+					<section aria-label="Stay updated" className="py-10 sm:py-16 md:py-24">
 						<CtaBanner />
 					</section>
 				</Reveal>

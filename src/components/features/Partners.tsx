@@ -23,9 +23,9 @@ const Partners = () => {
   }
 
   return (
-    <div className="py-16">
-      <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-12 font-morganite">
+    <div className="py-8 sm:py-12 md:py-16">
+      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 md:px-8">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-10 md:mb-12 font-morganite">
           Special Thanks To Our{' '}
           <GlowingTextOrange className="font-bold">
             Sponsors And Partners
@@ -33,7 +33,7 @@ const Partners = () => {
         </h1>
 
         {/* Responsive grid for logos */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-8">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5 lg:gap-8">
           {sponsors.map((sponsor, index) => (
             <div 
               key={index}
