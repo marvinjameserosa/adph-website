@@ -149,13 +149,13 @@ export default function Navbar() {
 					id="navbar-menu"
 					className={`${isMenuOpen ? "block" : "hidden"} mt-2 md:hidden`}
 				>
-					<div className="rounded-2xl bg-white/[0.04] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] backdrop-blur-xl">
-						<ul className="flex flex-col gap-1 p-2">
+					<div className="rounded-2xl bg-black/70 backdrop-blur-xl">
+						<ul className="flex flex-col p-3">
 							{navItems.map((item) => (
 								<li key={item.href}>
 									<Link
 										href={item.href}
-										className="block w-full rounded-xl px-4 py-3 text-center text-sm font-medium text-white/70 transition-all duration-200 hover:bg-white/[0.08] hover:text-white"
+										className="block rounded-xl px-4 py-3 text-base font-medium text-white/80 transition-colors duration-150 hover:bg-white/[0.08] hover:text-white"
 										onClick={(e) => {
 											e.preventDefault();
 											handleNavItemClick(item.href);
@@ -165,15 +165,13 @@ export default function Navbar() {
 									</Link>
 								</li>
 							))}
-							<li className="px-2 pt-3">
-								<p className="mb-3 text-center text-sm text-white/70">
-									Be Part of the Movement! Join and Celebrate Innovation with Us!
-								</p>
+							<li>
 								<Link
 									href="https://arduinodayph.pwapilipinas.org/"
-									className="flex h-11 w-full items-center justify-center rounded-full bg-[#21935B] text-sm font-semibold uppercase tracking-wide text-white transition-all duration-200 hover:bg-[#1a7a4a] hover:shadow-[0_0_16px_rgba(33,147,91,0.3)]"
+									className="block rounded-xl px-4 py-3 text-base font-medium text-white/80 transition-colors duration-150 hover:bg-white/[0.08] hover:text-white"
+									onClick={closeMenu}
 								>
-									JOIN US
+									Join Us
 								</Link>
 							</li>
 						</ul>
