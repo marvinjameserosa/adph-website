@@ -2,7 +2,6 @@
 
 import { useEffect, useState, useCallback } from "react";
 import Link from "next/link";
-import { Button } from "../ui/button";
 import Image from "next/image";
 import Logo from "../../../public/assets/adph-logo.png";
 import { IconMapPin, IconCalendarEvent } from "@tabler/icons-react";
@@ -40,32 +39,27 @@ export const Hero = () => {
 				<div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
 					{/* Content - left side on desktop */}
 					<div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-						{/* Date & venue badge */}
-						<div className="mb-5 inline-flex flex-wrap items-center justify-center gap-2 rounded-full border border-white/[0.06] bg-white/[0.02] px-4 py-2 backdrop-blur-sm sm:mb-6 sm:gap-2.5 sm:px-5">
-							<div className="flex items-center gap-1.5">
-								<IconCalendarEvent className="h-4 w-4 text-primary/70" />
-								<span className="text-[11px] font-medium uppercase tracking-[0.18em] text-white/40 sm:text-xs">
+						{/* Date & venue */}
+						<div className="mb-6 flex flex-col items-center gap-3 sm:mb-8 sm:flex-row sm:gap-5 lg:items-start">
+							<div className="flex items-center gap-2">
+								<IconCalendarEvent className="h-4 w-4 text-primary/60" />
+								<span className="text-sm font-semibold tracking-wide text-white sm:text-base">
 									March 21, 2026
 								</span>
 							</div>
-							<span className="text-white/10" aria-hidden>|</span>
-							<div className="flex items-center gap-1.5">
-								<IconMapPin className="h-4 w-4 text-primary/70" />
-								<span className="text-[11px] font-medium uppercase tracking-[0.18em] text-white/40 sm:text-xs">
-									Asia Pacific College
+							<div className="flex items-center gap-2">
+								<IconMapPin className="h-4 w-4 text-primary/60" />
+								<span className="text-sm font-medium text-white/60 sm:text-base">
+									Asia Pacific College, Makati
 								</span>
 							</div>
 						</div>
 
 						{/* Headline */}
 						<h1 className="mb-5 max-w-2xl text-balance text-3xl font-bold leading-[1.1] sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl">
-							<span className="text-primary">Arduino</span> Day{" "}
-							<span
-								className="bg-clip-text text-transparent"
-								style={{ backgroundImage: "linear-gradient(135deg, #008080 0%, #00a0a0 40%, #EE7402 100%)" }}
-							>
-								Philippines
-							</span>{" "}
+							<span className="text-primary">Arduino</span>{" "}
+							<span className="text-[#EE7402]">Day</span>{" "}
+							<span className="text-[#2ea043]">Philippines</span>{" "}
 							<span className="text-[#2ea043]">2026</span>
 						</h1>
 
@@ -77,21 +71,17 @@ export const Hero = () => {
 
 						{/* CTA buttons */}
 						<div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 lg:justify-start">
-							<Link href="#partners">
-								<Button className="px-6 py-3 text-sm sm:px-8 sm:py-3.5 lg:px-10 lg:py-4">
-									Partner With Us
-								</Button>
-							</Link>
-							<Link href="#merch">
-								<Button className="px-6 py-3 text-sm sm:px-8 sm:py-3.5 lg:px-10 lg:py-4">
-									Merch for a Cause
-								</Button>
+							<Link
+								href="#partners"
+								className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-all hover:bg-primary/85 sm:px-8 sm:py-3.5 lg:px-10 lg:py-4"
+							>
+								Partner With Us
 							</Link>
 							<Link
-								href="#faqs"
-								className="inline-flex items-center rounded-full border border-white/[0.06] px-5 py-3 text-xs font-medium uppercase tracking-[0.14em] text-white/40 transition-all hover:border-white/15 hover:text-white/65 sm:px-6 sm:py-3.5 sm:text-sm"
+								href="#merch"
+								className="inline-flex items-center rounded-full border border-white/[0.12] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-all hover:border-white/25 hover:bg-white/[0.04] sm:px-8 sm:py-3.5 lg:px-10 lg:py-4"
 							>
-								View FAQs
+								Support Us with Merch
 							</Link>
 						</div>
 					</div>
