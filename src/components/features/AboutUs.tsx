@@ -120,8 +120,10 @@ const AboutUs = () => {
 					<span className="h-2 w-2 rounded-full bg-primary shadow-[0_0_0_6px_rgba(0,178,178,0.18)] animate-pulse" />
 					<span>About the day</span>
 				</div>
-				<h2 className="text-3xl font-semibold leading-tight md:text-4xl">
-					What is <span className="text-secondary">Arduino Day Philippines?</span>
+				<h2>
+					What is <span className="text-primary">Arduino</span>{" "}
+					<span className="text-secondary">Day</span>{" "}
+					<span className="text-[#21935B]">Philippines?</span>
 				</h2>
 				<div className="flex flex-col gap-3 text-base text-white/80 md:text-lg">
 					<p>
