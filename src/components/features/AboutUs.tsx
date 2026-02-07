@@ -150,7 +150,7 @@ const AboutUs = () => {
 						<div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#008080]/40 via-transparent to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-30" />
 						<div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/20 transition-all duration-500 group-hover:ring-primary/30" />
 						<div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
-							<span className="font-morganite text-2xl uppercase tracking-wider text-white/80 drop-shadow-lg sm:text-3xl">Community</span>
+							<span className="font-morganite text-3xl uppercase tracking-wider text-primary sm:text-4xl [text-shadow:_0_2px_12px_rgba(0,0,0,0.8),_0_1px_4px_rgba(0,0,0,0.9)]">Community</span>
 						</div>
 					</div>
 
@@ -166,7 +166,7 @@ const AboutUs = () => {
 						<div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-[#EE7402]/30 opacity-70 transition-opacity duration-500 group-hover:opacity-20" />
 						<div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/20 transition-all duration-500 group-hover:ring-secondary/30" />
 						<div className="absolute bottom-0 left-0 right-0 p-4">
-							<span className="font-morganite text-2xl uppercase tracking-wider text-white/80 drop-shadow-lg">Build</span>
+							<span className="font-morganite text-3xl uppercase tracking-wider text-secondary sm:text-4xl [text-shadow:_0_2px_12px_rgba(0,0,0,0.8),_0_1px_4px_rgba(0,0,0,0.9)]">Build</span>
 						</div>
 					</div>
 
@@ -182,7 +182,7 @@ const AboutUs = () => {
 						<div className="pointer-events-none absolute inset-0 bg-gradient-to-tl from-[#008080]/25 via-transparent to-[#EE7402]/15 opacity-60 transition-opacity duration-500 group-hover:opacity-20" />
 						<div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/20 transition-all duration-500 group-hover:ring-white/30" />
 						<div className="absolute bottom-0 left-0 right-0 p-4">
-							<span className="font-morganite text-2xl uppercase tracking-wider text-white/80 drop-shadow-lg">Learn</span>
+							<span className="font-morganite text-3xl uppercase tracking-wider text-[#21935B] sm:text-4xl [text-shadow:_0_2px_12px_rgba(0,0,0,0.8),_0_1px_4px_rgba(0,0,0,0.9)]">Learn</span>
 						</div>
 					</div>
 				</div>
