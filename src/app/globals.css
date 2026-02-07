@@ -55,20 +55,19 @@
 	}
 	/* Section Headings */
 	h2 {
-		@apply font-morganite text-3xl font-bold leading-none sm:text-5xl;
+		@apply font-morganite text-3xl font-bold leading-none sm:text-4xl md:text-5xl;
 	}
 
 	h3 {
-		@apply font-morganite text-4xl font-bold leading-none;
+		@apply font-morganite text-3xl font-bold leading-none md:text-4xl;
 	}
 
 	h4 {
-		@apply font-morganite text-3xl font-medium leading-none;
+		@apply font-morganite text-2xl font-medium leading-none md:text-3xl;
 	}
 
 	.container {
-		@apply px-5 pt-20 md:max-w-md mx-auto;
-
+		@apply px-5 pt-20 mx-auto w-full max-w-6xl md:px-8 lg:px-12;
 	}
 
 	.border-gradient-primary::before {

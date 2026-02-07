@@ -21,21 +21,21 @@ const ComingSoon = ({
 		<div className="relative px-4">
 			<div
 				className={cn(
-					"relative isolate mx-auto w-full max-w-6xl overflow-hidden rounded-3xl px-6 py-14 shadow-[0_20px_80px_rgba(0,0,0,0.35)] lg:px-12 lg:py-16",
+					"relative isolate mx-auto w-full max-w-6xl overflow-hidden rounded-2xl px-4 py-10 shadow-[0_20px_80px_rgba(0,0,0,0.35)] sm:rounded-3xl sm:px-6 sm:py-14 lg:px-12 lg:py-16",
 					className
 				)}
 			>
-				<div className="relative flex flex-col items-center gap-6 text-center">
-					<div className="flex items-center gap-3 rounded-full px-4 py-2 uppercase tracking-[0.28em] text-white/70">
+				<div className="relative flex flex-col items-center gap-4 text-center sm:gap-6">
+					<div className="flex items-center gap-3 rounded-full px-3 py-1.5 uppercase tracking-[0.28em] text-white/70 sm:px-4 sm:py-2">
 						<span className="h-2 w-2 rounded-full bg-primary shadow-[0_0_0_6px_rgba(0,178,178,0.18)] animate-pulse" />
-						<span className="text-xs">{label}</span>
+						<span className="text-[10px] sm:text-xs">{label}</span>
 					</div>
 
-					<Heading text="Coming Soon" glowAll className="text-4xl leading-tight md:text-6xl" />
+					<Heading text="Coming Soon" glowAll className="text-3xl leading-tight sm:text-4xl md:text-6xl" />
 
-					<p className="max-w-3xl text-sm text-white/70 md:text-lg">{description}</p>
+					<p className="max-w-3xl text-xs text-white/70 sm:text-sm md:text-lg">{description}</p>
 
-					<div className="grid w-full max-w-4xl grid-cols-1 gap-4 md:grid-cols-3">
+					<div className="grid w-full max-w-4xl grid-cols-1 gap-3 sm:gap-4 md:grid-cols-3">
 						{[
 							{
 								title: "Lineup",
@@ -53,10 +53,10 @@ const ComingSoon = ({
 						].map((item) => (
 							<div
 								key={item.title}
-								className="rounded-2xl px-4 py-5 text-left shadow-[0_10px_40px_rgba(0,0,0,0.35)]"
+								className="rounded-xl px-4 py-4 text-left shadow-[0_10px_40px_rgba(0,0,0,0.35)] sm:rounded-2xl sm:py-5"
 							>
-								<p className="text-xs uppercase tracking-[0.18em] text-white/60">{item.title}</p>
-								<p className="mt-2 text-sm text-white/85 md:text-base">{item.copy}</p>
+								<p className="text-[10px] uppercase tracking-[0.18em] text-white/60 sm:text-xs">{item.title}</p>
+								<p className="mt-2 text-xs text-white/85 sm:text-sm md:text-base">{item.copy}</p>
 							</div>
 						))}
 					</div>

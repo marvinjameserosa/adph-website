@@ -3,11 +3,11 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<footer className="mt-20 border-t border-white/10">
-			<div className="container md:px-8">
-				<div className="flex flex-col md:flex-row md:px-8 justify-between mx-auto border-b border-gray-800 py-6">
-				<div className="mb-6 md:mb-0">
-					<div className="flex gap-4 items-center text-nowrap mb-4">
+		<footer className="mt-12 border-t border-white/10 sm:mt-16 md:mt-20">
+			<div className="container">
+				<div className="flex flex-col gap-8 border-b border-gray-800 py-6 md:flex-row md:justify-between md:gap-12">
+				<div className="mb-0">
+					<div className="flex gap-3 items-center text-nowrap mb-4 sm:gap-4">
 						<span>
 							<Image
 								src="/assets/logo.png"
@@ -19,7 +19,7 @@ const Footer = () => {
 						</span>
 						<p className="font-semibold">Arduino Day Philippines</p>
 					</div>
-					<p className="max-w-[40ch] text-gray-400">
+					<p className="max-w-[40ch] text-sm text-gray-400 sm:text-base">
 						Empowering ideas, building innovations, and bringing projects to
 						life!
 					</p>
@@ -110,7 +110,7 @@ const Footer = () => {
 					</div>
 				</div>
 
-				<div className="grid grid-cols-2 gap-10 md:gap-20">
+				<div className="grid grid-cols-2 gap-8 sm:gap-10 md:gap-20">
 					<div>
 						<p className="font-semibold mb-2">About Us</p>
 						<ul className="text-gray-400 space-y-1">
@@ -163,7 +163,7 @@ const Footer = () => {
 					</div>
 				</div>
 				</div>
-				<div className="flex justify-center items-center text-sm md:text-base py-8 text-gray-400">
+				<div className="flex justify-center items-center text-xs text-center py-6 text-gray-400 sm:text-sm sm:py-8 md:text-base">
 					<p>© 2026 Arduino Day Philippines. All rights reserved.</p>
 				</div>
 			</div>
