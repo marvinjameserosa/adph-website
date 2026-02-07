@@ -57,9 +57,11 @@ export const Hero = () => {
 
 						{/* Headline */}
 						<h1 className="mb-3 text-[1.7rem] font-bold leading-[1.15] sm:mb-5 sm:text-4xl md:mb-6 md:text-5xl lg:text-6xl xl:text-7xl">
-							<span className="inline sm:whitespace-nowrap"><span className="text-primary">Arduino</span>{" "}<span className="text-secondary">Day</span></span>
-							<br className="sm:hidden" />{" "}
-							<span className="inline sm:whitespace-nowrap"><span className="text-[#21935B]">Philippines</span>{" "}2026</span>
+							<span className="text-primary">Arduino</span>{" "}
+							<span className="text-secondary">Day</span>
+							<br />
+							<span className="text-[#21935B]">Philippines</span>{" "}
+							2026
 						</h1>
 
 						{/* Subtitle */}
