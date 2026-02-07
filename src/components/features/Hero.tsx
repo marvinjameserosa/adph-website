@@ -86,7 +86,7 @@ export const Hero = () => {
 					</div>
 
 					{/* Logo with parallax - right on desktop, top on mobile */}
-					<div className="order-1 flex items-center justify-center lg:order-2 lg:-ml-8">
+					<div className="order-1 hidden items-center justify-center lg:order-2 lg:flex lg:-ml-8">
 						<div
 							className="relative"
 							style={{
