@@ -30,7 +30,7 @@ export default function Home() {
 				<Navbar />
 				<Hero />
 				<Reveal>
-					<section id="about" className="scroll-mt-24 pt-10 sm:pt-16 md:pt-24">
+					<section id="about" className="scroll-mt-24 pt-4 sm:pt-6 md:pt-10">
 						<AboutUs />
 					</section>
 				</Reveal>
@@ -42,14 +42,6 @@ export default function Home() {
 						<ComingSoon
 							label="Speakers"
 							description="We are locking in a lineup of voices who build, ship, and share openly. Expect a mix of community favorites and fresh perspectives."
-						/>
-					</section>
-				</Reveal>
-				<Reveal>
-					<section id="hackathon" className="scroll-mt-24 py-10 sm:py-16 md:py-24">
-						<ComingSoon
-							label="Hackathon"
-							description="Tracks, mentors, and judging are in the works so the build sprint feels focused and fair. Challenges and criteria will drop soon."
 						/>
 					</section>
 				</Reveal>

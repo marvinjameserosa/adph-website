@@ -2,6 +2,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
@@ -16,9 +17,9 @@ const AboutUs = () => {
 		if (!containerRef.current) return;
 
 		const getInitialSize = () => {
-			let width = Math.min(window.innerWidth * 0.9, 800);
-			if (window.innerWidth < 640) width = window.innerWidth * 0.95;
-			const height = window.innerWidth < 768 ? Math.round(width * 0.65) : width;
+			let width = Math.min(window.innerWidth * 0.9, 600);
+			if (window.innerWidth < 640) width = window.innerWidth * 0.85;
+			const height = window.innerWidth < 768 ? Math.round(width * 0.6) : Math.round(width * 0.75);
 			return { width, height };
 		};
 
@@ -50,13 +51,11 @@ const AboutUs = () => {
 				const scaleFactor = 0.05;
 				loadedModel.scale.set(scaleFactor, scaleFactor, scaleFactor);
 
-				// Center model so it doesn't sit low in the view.
 				const box = new THREE.Box3().setFromObject(loadedModel);
 				const center = box.getCenter(new THREE.Vector3());
 				loadedModel.position.sub(center);
 				loadedModel.position.y += 0.15;
 
-				// Fit camera to model.
 				const size = box.getSize(new THREE.Vector3());
 				const maxDim = Math.max(size.x, size.y, size.z);
 				const fov = (camera.fov * Math.PI) / 180;
@@ -95,9 +94,9 @@ const AboutUs = () => {
 
 	useEffect(() => {
 		const handleResize = () => {
-			let width = Math.min(window.innerWidth * 0.9, 800);
-			if (window.innerWidth < 640) width = window.innerWidth * 0.95;
-			const height = window.innerWidth < 768 ? Math.round(width * 0.65) : width;
+			let width = Math.min(window.innerWidth * 0.9, 600);
+			if (window.innerWidth < 640) width = window.innerWidth * 0.85;
+			const height = window.innerWidth < 768 ? Math.round(width * 0.6) : Math.round(width * 0.75);
 
 			if (rendererRef.current) {
 				rendererRef.current.setSize(width, height);
@@ -115,7 +114,7 @@ const AboutUs = () => {
 	}, []);
 
 	return (
-		<div className="container relative flex flex-col items-center justify-center gap-4 py-12 md:gap-6 md:py-16">
+		<div className="container relative flex flex-col items-center justify-center gap-4 py-6 md:gap-6 md:py-10">
 			<div className="flex flex-col items-center gap-4 text-center max-w-3xl">
 				<div className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.16em] text-white/70 backdrop-blur">
 					<span className="h-2 w-2 rounded-full bg-primary shadow-[0_0_0_6px_rgba(0,178,178,0.18)] animate-pulse" />
@@ -126,15 +125,48 @@ const AboutUs = () => {
 				</h2>
 				<div className="flex flex-col gap-3 text-base text-white/80 md:text-lg">
 					<p>
-						Arduino Day is a worldwide celebration of Arduino's birthday, bringing people together to share their builds, ideas, and open-source learnings.
+						Arduino Day is a worldwide celebration of Arduino{"'"}s birthday, bringing people together to share their builds, ideas, and open-source learnings.
 					</p>
 					<p>
 						Alongside the official stream, local communities host talks, demos, and showcases so anyone can discover, tinker, and contribute.
 					</p>
 				</div>
 			</div>
+
+			{/* Photo gallery */}
+			<div className="mt-2 grid w-full max-w-4xl grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
+				<div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10">
+					<Image
+						src="/images/about-1.jpg"
+						alt="Community members collaborating with Arduino boards at a maker event"
+						fill
+						className="object-cover"
+						sizes="(max-width: 640px) 100vw, 33vw"
+					/>
+				</div>
+				<div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10">
+					<Image
+						src="/images/about-2.jpg"
+						alt="Close-up of Arduino boards, wires, and components on a workshop table"
+						fill
+						className="object-cover"
+						sizes="(max-width: 640px) 100vw, 33vw"
+					/>
+				</div>
+				<div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10">
+					<Image
+						src="/images/about-3.jpg"
+						alt="Speaker presenting at a tech community event with an engaged audience"
+						fill
+						className="object-cover"
+						sizes="(max-width: 640px) 100vw, 33vw"
+					/>
+				</div>
+			</div>
+
+			{/* 3D Model - reduced size */}
 			<div className="relative flex w-full justify-center">
-				<div className="relative flex w-full max-w-3xl items-center justify-center overflow-hidden rounded-3xl px-4 py-4 md:py-6">
+				<div className="relative flex w-full max-w-2xl items-center justify-center overflow-hidden rounded-3xl px-2 py-2 md:py-3">
 					<div ref={containerRef} className="relative" />
 				</div>
 			</div>
