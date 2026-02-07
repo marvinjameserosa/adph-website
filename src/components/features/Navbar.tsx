@@ -59,7 +59,7 @@ export default function Navbar() {
 		<header className="fixed inset-x-0 top-0 z-50 w-full">
 			<div className="mx-auto w-full max-w-6xl px-4 py-3">
 				<nav
-					className="rounded-full border border-white/10 bg-black/70 backdrop-blur"
+					className="rounded-full bg-black/40 backdrop-blur-md"
 					aria-label="Primary navigation"
 				>
 					<div className="flex items-center justify-between gap-3 px-3 py-2 md:px-4">
@@ -98,7 +98,7 @@ export default function Navbar() {
 								href="https://arduinodayph.pwapilipinas.org/"
 								className="hidden md:block"
 							>
-								<Button className="h-10 rounded-full px-6">JOIN US</Button>
+								<Button className="h-10 rounded-full bg-[#21935B] px-6 text-white hover:bg-[#1a7a4a]">JOIN US</Button>
 							</Link>
 
 							{/* Mobile Menu Toggle */}
@@ -150,7 +150,7 @@ export default function Navbar() {
 					id="navbar-menu"
 					className={`${isMenuOpen ? "block" : "hidden"} mt-2 md:hidden`}
 				>
-					<div className="rounded-2xl border border-white/10 bg-black/80 backdrop-blur">
+					<div className="rounded-2xl bg-black/60 backdrop-blur-md">
 						<ul className="flex flex-col gap-1 p-2">
 							{navItems.map((item) => (
 								<li key={item.href}>
@@ -171,7 +171,7 @@ export default function Navbar() {
 									Be Part of the Movement! Join and Celebrate Innovation with Us!
 								</p>
 								<Link href="https://arduinodayph.pwapilipinas.org/" className="block">
-									<Button className="h-11 w-full rounded-full">JOIN US</Button>
+									<Button className="h-11 w-full rounded-full bg-[#21935B] text-white hover:bg-[#1a7a4a]">JOIN US</Button>
 								</Link>
 							</li>
 						</ul>
