@@ -110,57 +110,40 @@ const Footer = () => {
 					</div>
 				</div>
 
-				<div className="grid grid-cols-2 gap-8 sm:gap-10 md:gap-20">
-					<div>
-						<p className="font-semibold mb-2">About Us</p>
-						<ul className="text-gray-400 space-y-1">
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Description
-								</a>
-							</li>
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Mission & Vision
-								</a>
-							</li>
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Location
-								</a>
-							</li>
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Highlights
-								</a>
-							</li>
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Sponsors
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div>
-						<p className="font-semibold mb-2">General</p>
-						<ul className="text-gray-400 space-y-1">
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									FAQs
-								</a>
-							</li>
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Agenda
-								</a>
-							</li>
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Merch
-								</a>
-							</li>
-						</ul>
-					</div>
+				<div>
+					<p className="font-semibold mb-2">Quick Links</p>
+					<ul className="text-gray-400 space-y-1">
+						<li>
+							<a href="#about" className="hover:text-primary duration-300">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="#agenda" className="hover:text-primary duration-300">
+								Events
+							</a>
+						</li>
+						<li>
+							<a href="#merch" className="hover:text-primary duration-300">
+								Merch
+							</a>
+						</li>
+						<li>
+							<a href="#partners" className="hover:text-primary duration-300">
+								Partners
+							</a>
+						</li>
+						<li>
+							<a href="#speakers" className="hover:text-primary duration-300">
+								Speakers
+							</a>
+						</li>
+						<li>
+							<a href="#faqs" className="hover:text-primary duration-300">
+								FAQ
+							</a>
+						</li>
+					</ul>
 				</div>
 				</div>
 				<div className="flex justify-center items-center text-xs text-center py-6 text-gray-400 sm:text-sm sm:py-8 md:text-base">
