@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../../public/assets/adph-logo.png";
 import { IconMapPin, IconCalendarEvent } from "@tabler/icons-react";
@@ -70,18 +69,24 @@ export const Hero = () => {
 
 						{/* CTA buttons */}
 						<div className="flex w-full flex-col items-stretch gap-2.5 sm:w-auto sm:flex-row sm:items-center sm:gap-4 lg:justify-start">
-							<Link
-								href="#partners"
+							<button
+								onClick={() => {
+									const el = document.querySelector("#partners");
+									if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+								}}
 								className="inline-flex items-center justify-center rounded-full bg-primary/90 px-6 py-2.5 text-[13px] font-semibold uppercase tracking-wide text-white transition-all hover:bg-primary sm:px-8 sm:py-3 sm:text-sm lg:px-10 lg:py-4"
 							>
 								Partner With Us
-							</Link>
-							<Link
-								href="#merch"
+							</button>
+							<button
+								onClick={() => {
+									const el = document.querySelector("#merch");
+									if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+								}}
 								className="inline-flex items-center justify-center rounded-full border border-white/[0.08] px-6 py-2.5 text-[13px] font-semibold uppercase tracking-wide text-white/80 transition-all hover:border-white/20 hover:text-white sm:px-8 sm:py-3 sm:text-sm lg:px-10 lg:py-4"
 							>
 								Support Us with Merch
-							</Link>
+							</button>
 						</div>
 					</div>
 

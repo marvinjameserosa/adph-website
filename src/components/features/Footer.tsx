@@ -107,60 +107,99 @@ const Footer = () => {
 								/>
 							</svg>
 						</a>
+						<a
+							href="https://www.instagram.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<svg
+								width="37"
+								height="37"
+								viewBox="0 0 37 37"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<circle
+									cx="18.5"
+									cy="18.5"
+									r="18.3707"
+									fill="#D9D9D9"
+									className="hover:fill-primary duration-300"
+								/>
+								<path
+									d="M18.5 13.38C20.1575 13.38 20.3525 13.3875 21.0087 13.4175C21.6162 13.445 21.9437 13.5475 22.1637 13.6325C22.4537 13.745 22.6637 13.88 22.8837 14.1C23.1037 14.32 23.2387 14.53 23.3512 14.82C23.4362 15.04 23.5387 15.3675 23.5662 15.975C23.5962 16.6313 23.6037 16.8263 23.6037 18.4838C23.6037 20.1413 23.5962 20.3363 23.5662 20.9925C23.5387 21.6 23.4362 21.9275 23.3512 22.1475C23.2387 22.4375 23.1037 22.6475 22.8837 22.8675C22.6637 23.0875 22.4537 23.2225 22.1637 23.335C21.9437 23.42 21.6162 23.5225 21.0087 23.55C20.3525 23.58 20.1575 23.5875 18.5 23.5875C16.8425 23.5875 16.6475 23.58 15.9913 23.55C15.3838 23.5225 15.0563 23.42 14.8363 23.335C14.5463 23.2225 14.3363 23.0875 14.1163 22.8675C13.8963 22.6475 13.7613 22.4375 13.6488 22.1475C13.5638 21.9275 13.4613 21.6 13.4338 20.9925C13.4038 20.3363 13.3963 20.1413 13.3963 18.4838C13.3963 16.8263 13.4038 16.6313 13.4338 15.975C13.4613 15.3675 13.5638 15.04 13.6488 14.82C13.7613 14.53 13.8963 14.32 14.1163 14.1C14.3363 13.88 14.5463 13.745 14.8363 13.6325C15.0563 13.5475 15.3838 13.445 15.9913 13.4175C16.6475 13.3875 16.8425 13.38 18.5 13.38ZM18.5 11.9375C16.815 11.9375 16.605 11.945 15.9413 11.975C15.2788 12.005 14.8225 12.1125 14.4225 12.27C14.0088 12.4325 13.6575 12.6488 13.3088 12.9988C12.9588 13.3475 12.7425 13.6988 12.58 14.1113C12.4225 14.5125 12.315 14.9675 12.285 15.63C12.255 16.295 12.2475 16.505 12.2475 18.19C12.2475 19.875 12.255 20.085 12.285 20.7488C12.315 21.4113 12.4225 21.8675 12.58 22.2675C12.7425 22.6813 12.9588 23.0325 13.3088 23.3813C13.6575 23.7313 14.0088 23.9475 14.4213 24.11C14.8225 24.2675 15.2775 24.375 15.94 24.405C16.6038 24.435 16.8138 24.4425 18.4988 24.4425C20.1838 24.4425 20.3938 24.435 21.0575 24.405C21.72 24.375 22.1763 24.2675 22.5763 24.11C22.9888 23.9475 23.34 23.7313 23.6888 23.3813C24.0388 23.0325 24.255 22.6813 24.4175 22.2688C24.575 21.8675 24.6825 21.4125 24.7125 20.75C24.7425 20.0863 24.75 19.8763 24.75 18.1913C24.75 16.5063 24.7425 16.2963 24.7125 15.6325C24.6825 14.97 24.575 14.5138 24.4175 14.1138C24.26 13.6988 24.0438 13.3475 23.6938 12.9988C23.345 12.6488 22.9938 12.4325 22.5813 12.27C22.18 12.1125 21.725 12.005 21.0625 11.975C20.3975 11.945 20.1875 11.9375 18.5025 11.9375H18.5Z"
+									fill="#131118"
+								/>
+								<path
+									d="M18.5 15.2725C16.7225 15.2725 15.2825 16.7125 15.2825 18.49C15.2825 20.2675 16.7225 21.7075 18.5 21.7075C20.2775 21.7075 21.7175 20.2675 21.7175 18.49C21.7175 16.7125 20.2775 15.2725 18.5 15.2725ZM18.5 20.27C17.5175 20.27 16.72 19.4725 16.72 18.49C16.72 17.5075 17.5175 16.71 18.5 16.71C19.4825 16.71 20.28 17.5075 20.28 18.49C20.28 19.4725 19.4825 20.27 18.5 20.27Z"
+									fill="#131118"
+								/>
+								<path
+									d="M21.8738 15.1125C21.8738 15.6425 21.4438 16.0725 20.9138 16.0725C20.3838 16.0725 19.9538 15.6425 19.9538 15.1125C19.9538 14.5825 20.3838 14.1525 20.9138 14.1525C21.4438 14.1525 21.8738 14.5825 21.8738 15.1125Z"
+									fill="#131118"
+								/>
+							</svg>
+						</a>
+						<a
+							href="mailto:contact@arduinodayphilippines.com"
+						>
+							<svg
+								width="37"
+								height="37"
+								viewBox="0 0 37 37"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<circle
+									cx="18.5"
+									cy="18.5"
+									r="18.3707"
+									fill="#D9D9D9"
+									className="hover:fill-primary duration-300"
+								/>
+								<path
+									d="M25.5 13.5H11.5C10.95 13.5 10.505 13.95 10.505 14.5L10.5 22.5C10.5 23.05 10.95 23.5 11.5 23.5H25.5C26.05 23.5 26.5 23.05 26.5 22.5V14.5C26.5 13.95 26.05 13.5 25.5 13.5ZM25.5 15.5L18.5 19.75L11.5 15.5V14.5L18.5 18.75L25.5 14.5V15.5Z"
+									fill="#131118"
+								/>
+							</svg>
+						</a>
 					</div>
 				</div>
 
-				<div className="grid grid-cols-2 gap-8 sm:gap-10 md:gap-20">
-					<div>
-						<p className="font-semibold mb-2">About Us</p>
-						<ul className="text-gray-400 space-y-1">
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Description
-								</a>
-							</li>
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Mission & Vision
-								</a>
-							</li>
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Location
-								</a>
-							</li>
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Highlights
-								</a>
-							</li>
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Sponsors
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div>
-						<p className="font-semibold mb-2">General</p>
-						<ul className="text-gray-400 space-y-1">
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									FAQs
-								</a>
-							</li>
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Agenda
-								</a>
-							</li>
-							<li>
-								<a href="" className="hover:text-primary duration-300">
-									Merch
-								</a>
-							</li>
-						</ul>
-					</div>
+				<div>
+					<p className="font-semibold mb-2">Quick Links</p>
+					<ul className="text-gray-400 space-y-1">
+						<li>
+							<a href="#about" className="hover:text-primary duration-300">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="#agenda" className="hover:text-primary duration-300">
+								Events
+							</a>
+						</li>
+						<li>
+							<a href="#merch" className="hover:text-primary duration-300">
+								Merch
+							</a>
+						</li>
+						<li>
+							<a href="#partners" className="hover:text-primary duration-300">
+								Partners
+							</a>
+						</li>
+						<li>
+							<a href="#speakers" className="hover:text-primary duration-300">
+								Speakers
+							</a>
+						</li>
+						<li>
+							<a href="#faqs" className="hover:text-primary duration-300">
+								FAQ
+							</a>
+						</li>
+					</ul>
 				</div>
 				</div>
 				<div className="flex justify-center items-center text-xs text-center py-6 text-gray-400 sm:text-sm sm:py-8 md:text-base">
