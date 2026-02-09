@@ -44,6 +44,11 @@ export default function Home() {
 					</section>
 				</Reveal>
 				<Reveal>
+					<section id="partners" className="scroll-mt-24 py-10 sm:py-16 md:py-24">
+						<Partners />
+					</section>
+				</Reveal>
+				<Reveal>
 					<section id="speakers" className="scroll-mt-24 py-10 sm:py-16 md:py-24">
 						<ComingSoon
 							label="Speakers"
@@ -57,11 +62,6 @@ export default function Home() {
 							label="Agenda"
 							description="We are dialing in the flow so every session has breathing room and impact. Timing, rooms, and transitions will be shared shortly."
 						/>
-					</section>
-				</Reveal>
-				<Reveal>
-					<section id="partners" className="scroll-mt-24 py-10 sm:py-16 md:py-24">
-						<Partners />
 					</section>
 				</Reveal>
 	
