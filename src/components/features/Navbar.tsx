@@ -8,10 +8,12 @@ export default function Navbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const navItems = [
-		{ href: "#about", label: "About Event" },
-		{ href: "#speakers", label: "Speakers" },
+		{ href: "#about", label: "About" },
+		{ href: "#agenda", label: "Events" },
 		{ href: "#merch", label: "Merch" },
-		{ href: "#faqs", label: "FAQs" },
+		{ href: "#partners", label: "Partners" },
+		{ href: "#speakers", label: "Speakers" },
+		{ href: "#faqs", label: "FAQ" },
 	];
 
 	const toggleMenu = () => {
