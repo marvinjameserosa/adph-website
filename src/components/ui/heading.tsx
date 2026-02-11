@@ -49,10 +49,10 @@ const Heading = ({
 	}, []);
 
 	return (
-		<div className="flex h-fit">
+		<div className="flex h-fit flex-wrap justify-center">
 			{text.split("").map((letter, index) =>
 				letter === " " ? (
-					<div key={index} className="w-4" />
+					<div key={index} className="w-2 sm:w-3 md:w-4" />
 				) : (
 					<h2
 						onAnimationEnd={() => setCurrentChar(-1)}

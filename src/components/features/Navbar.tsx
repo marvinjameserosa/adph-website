@@ -2,17 +2,18 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Button } from "../ui/button";
 import Image from "next/image";
 
 export default function Navbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const navItems = [
-		{ href: "#about", label: "About Event" },
-		{ href: "#speakers", label: "Speakers" },
+		{ href: "#about", label: "About" },
+		{ href: "#agenda", label: "Events" },
 		{ href: "#merch", label: "Merch" },
-		{ href: "#faqs", label: "FAQs" },
+		{ href: "#partners", label: "Partners" },
+		{ href: "#speakers", label: "Speakers" },
+		{ href: "#faqs", label: "FAQ" },
 	];
 
 	const toggleMenu = () => {
@@ -59,10 +60,10 @@ export default function Navbar() {
 		<header className="fixed inset-x-0 top-0 z-50 w-full">
 			<div className="mx-auto w-full max-w-6xl px-4 py-3">
 				<nav
-					className="rounded-full border border-white/10 bg-black/70 backdrop-blur"
+					className="rounded-full bg-white/[0.04] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] backdrop-blur-xl"
 					aria-label="Primary navigation"
 				>
-					<div className="flex items-center justify-between gap-3 px-3 py-2 md:px-4">
+					<div className="flex items-center justify-between gap-3 px-4 py-2 md:px-5">
 						{/* Logo */}
 						<Link href="/" className="flex items-center gap-2 rounded-full px-2 py-1">
 							<Image
@@ -80,7 +81,7 @@ export default function Navbar() {
 								<li key={item.href}>
 									<Link
 										href={item.href}
-										className="rounded-full px-4 py-2 text-sm text-white/80 transition-colors hover:bg-white/5 hover:text-white"
+										className="rounded-full px-4 py-2 text-sm font-medium text-white/70 transition-all duration-200 hover:bg-white/[0.08] hover:text-white"
 										onClick={(e) => {
 											e.preventDefault();
 											handleNavItemClick(item.href);
@@ -96,15 +97,15 @@ export default function Navbar() {
 						<div className="flex items-center gap-2">
 							<Link
 								href="https://arduinodayph.pwapilipinas.org/"
-								className="hidden md:block"
+								className="hidden h-10 items-center rounded-full bg-[#21935B] px-6 text-sm font-semibold uppercase tracking-wide text-white transition-all duration-200 hover:bg-[#1a7a4a] hover:shadow-[0_0_16px_rgba(33,147,91,0.3)] md:inline-flex"
 							>
-								<Button className="h-10 rounded-full px-6">JOIN US</Button>
+								JOIN US
 							</Link>
 
 							{/* Mobile Menu Toggle */}
 							<button
 								onClick={toggleMenu}
-								className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 md:hidden"
+								className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/[0.06] text-white transition-all duration-200 hover:bg-white/[0.12] focus:outline-none focus:ring-2 focus:ring-white/20 md:hidden"
 								aria-controls="navbar-menu"
 								aria-expanded={isMenuOpen}
 								aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -150,13 +151,13 @@ export default function Navbar() {
 					id="navbar-menu"
 					className={`${isMenuOpen ? "block" : "hidden"} mt-2 md:hidden`}
 				>
-					<div className="rounded-2xl border border-white/10 bg-black/80 backdrop-blur">
-						<ul className="flex flex-col gap-1 p-2">
+					<div className="rounded-2xl bg-black/70 backdrop-blur-xl">
+						<ul className="flex flex-col p-3">
 							{navItems.map((item) => (
 								<li key={item.href}>
 									<Link
 										href={item.href}
-										className="block w-full rounded-xl px-4 py-3 text-center text-sm text-white/85 transition-colors hover:bg-white/5"
+										className="block rounded-xl px-4 py-3 text-base font-medium text-white/80 transition-colors duration-150 hover:bg-white/[0.08] hover:text-white"
 										onClick={(e) => {
 											e.preventDefault();
 											handleNavItemClick(item.href);
@@ -166,12 +167,13 @@ export default function Navbar() {
 									</Link>
 								</li>
 							))}
-							<li className="px-2 pt-3">
-								<p className="mb-3 text-center text-sm text-white/70">
-									Be Part of the Movement! Join and Celebrate Innovation with Us!
-								</p>
-								<Link href="https://arduinodayph.pwapilipinas.org/" className="block">
-									<Button className="h-11 w-full rounded-full">JOIN US</Button>
+							<li>
+								<Link
+									href="https://arduinodayph.pwapilipinas.org/"
+									className="block rounded-xl px-4 py-3 text-base font-medium text-white/80 transition-colors duration-150 hover:bg-white/[0.08] hover:text-white"
+									onClick={closeMenu}
+								>
+									Join Us
 								</Link>
 							</li>
 						</ul>
