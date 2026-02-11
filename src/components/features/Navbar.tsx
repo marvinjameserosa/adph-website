@@ -64,16 +64,17 @@ export default function Navbar() {
 					aria-label="Primary navigation"
 				>
 					<div className="flex items-center justify-between gap-3 px-4 py-2 md:px-5">
-						{/* Logo */}
-						<Link href="/" className="flex items-center gap-2 rounded-full px-2 py-1">
-							<Image
-								src="/assets/logo.png"
-								alt="Logo"
-								width={40}
-								height={40}
-								className="h-9 w-auto object-cover"
-							/>
-						</Link>
+					{/* Logo */}
+					<Link href="/" className="flex items-center gap-2 rounded-full px-2 py-1">
+						<Image
+							src="/assets/logo.png"
+							alt="Arduino Days 2026 Philippines Logo"
+							width={200}
+							height={80}
+							className="h-9 w-auto object-contain"
+							priority
+						/>
+					</Link>
 
 						{/* Desktop navigation */}
 						<ul className="hidden items-center gap-1 md:flex">
