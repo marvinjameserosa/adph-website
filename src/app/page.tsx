@@ -7,6 +7,7 @@ import Navbar from "@/components/features/Navbar";
 import { Hero } from "@/components/features/Hero";
 import AboutUs from "@/components/features/AboutUs";
 import Partners from "@/components/features/Partners";
+import Merch from "@/components/features/Merch";
 import Reveal from "@/components/ui/reveal";
 
 export default function Home() {
@@ -38,6 +39,16 @@ export default function Home() {
 					<Location />
 				</Reveal>
 				<Reveal>
+					<section id="merch" className="scroll-mt-24 py-10 sm:py-16 md:py-24">
+						<Merch />
+					</section>
+				</Reveal>
+				<Reveal>
+					<section id="partners" className="scroll-mt-24 py-10 sm:py-16 md:py-24">
+						<Partners />
+					</section>
+				</Reveal>
+				<Reveal>
 					<section id="speakers" className="scroll-mt-24 py-10 sm:py-16 md:py-24">
 						<ComingSoon
 							label="Speakers"
@@ -53,19 +64,7 @@ export default function Home() {
 						/>
 					</section>
 				</Reveal>
-				<Reveal>
-					<section id="partners" className="scroll-mt-24 py-10 sm:py-16 md:py-24">
-						<Partners />
-					</section>
-				</Reveal>
-				<Reveal>
-					<section id="merch" className="scroll-mt-24 py-10 sm:py-16 md:py-24">
-						<ComingSoon
-							label="Merch"
-							description="The drop is in progress - pieces designed for daily wear, not just event day. Photos, pricing, and preorder details are coming."
-						/>
-					</section>
-				</Reveal>
+	
 				<Reveal>
 					<section id="faqs" className="scroll-mt-24">
 						<FAQs />
