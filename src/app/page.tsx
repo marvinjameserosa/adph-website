@@ -31,7 +31,7 @@ export default function Home() {
 				<Navbar />
 				<Hero />
 				<Reveal>
-					<section id="about" className="scroll-mt-24 pt-10 sm:pt-16 md:pt-24">
+					<section id="about" className="scroll-mt-24 pt-4 sm:pt-6 md:pt-10">
 						<AboutUs />
 					</section>
 				</Reveal>

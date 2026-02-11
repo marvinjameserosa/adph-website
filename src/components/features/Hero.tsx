@@ -34,7 +34,7 @@ export const Hero = () => {
 
 	return (
 		<section className="relative w-full overflow-hidden">
-			<div className="relative mx-auto box-border w-full max-w-6xl px-6 pt-8 pb-12 sm:pt-10 sm:pb-16 md:px-8 md:pt-14 md:pb-24 lg:px-12 lg:pt-16 lg:pb-28">
+			<div className="relative mx-auto box-border w-full max-w-6xl px-6 pt-8 pb-6 sm:pt-10 sm:pb-8 md:px-8 md:pt-14 md:pb-12 lg:px-12 lg:pt-16 lg:pb-14">
 				<div className="grid items-center gap-6 sm:gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-8">
 					{/* Content - left on desktop, stacks below logo on mobile */}
 					<div className="order-2 flex flex-col items-center text-center lg:order-1 lg:items-start lg:text-left">
