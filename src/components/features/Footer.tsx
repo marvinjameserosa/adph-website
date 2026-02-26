@@ -8,15 +8,15 @@ const Footer = () => {
 				<div className="flex flex-col gap-8 border-b border-gray-800 py-6 md:flex-row md:justify-between md:gap-12">
 				<div className="mb-0">
 					<div className="flex gap-3 items-center text-nowrap mb-4 sm:gap-4">
-						<span>
-							<Image
-								src="/assets/logo.png"
-								alt="arduino day philippines logo"
-								width={50}
-								height={50}
-								className="block w-auto h-10 object-cover"
-							/>
-						</span>
+				<span>
+					<Image
+						src="/assets/logo.png"
+						alt="Arduino Days 2026 Philippines Logo"
+						width={200}
+						height={80}
+						className="block w-auto h-10 object-contain"
+					/>
+				</span>
 						<p className="font-semibold">Arduino Day Philippines</p>
 					</div>
 					<p className="max-w-[40ch] text-sm text-gray-400 sm:text-base">
@@ -155,11 +155,11 @@ const Footer = () => {
 									Agenda
 								</a>
 							</li>
-							<li>
-								<a href="#faq" className="hover:text-primary duration-300">
-									FAQs
-								</a>
-							</li>
+						<li>
+							<a href="#faqs" className="hover:text-primary duration-300">
+								FAQs
+							</a>
+						</li>
 						</ul>
 					</div>
 					<div>
