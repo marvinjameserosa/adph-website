@@ -53,15 +53,6 @@
   },
 
   {
-    "name": "MSC - PUP",
-    "path_to_image": "/images/logos/M",
-    "radius": 0,
-    "width": 120,
-    "height": 120,
-    "tier": "community"
-  },
-
-  {
     "name": "SAKTO STC-B",
     "path_to_image": "/images/logos/SAKTO_STC-B_Logo.png",
     "radius": 0,
@@ -69,41 +60,10 @@
     "height": 120,
     "tier": "community"
   },
-  {
-    "name": "UE Society of Computer Engineering Students",
-    "path_to_image": "/images/logos/SAKTO_STC",
-    "radius": 0,
-    "width": 120,
-    "height": 120,
-    "tier": "community"
-  },
-  {
-    "name": "AWCC Haribon",
-    "path_to_image": "/images/logos/aws cc haribon",
-    "radius": 0,
-    "width": 120,
-    "height": 120,
-    "tier": "community"
-  },
-  {
-    "name": "Tekkie Pinas",
-    "path_to_image": "/images/logos/aws cc haribon",
-    "radius": 0,
-    "width": 120,
-    "height": 120,
-    "tier": "community"
-  },
+
   {
     "name": "Kakacomputer",
     "path_to_image": "/images/logos/kaka-computer.png",
-    "radius": 0,
-    "width": 120,
-    "height": 120,
-    "tier": "community"
-  },
-  {
-    "name": "Now You Know",
-    "path_to_image": "/images/logos/now-you-know.png",
     "radius": 0,
     "width": 120,
     "height": 120,
